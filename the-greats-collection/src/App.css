@@ -3,8 +3,6 @@ h1{
   font-family: Georgia, serif;
 }
 
-
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -28,17 +26,6 @@ li:last-child {
   
 }
 
-  
-  /* li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  } */
-  
-
-  
   .active {
     background-color: #04AA6D;
   }
@@ -49,12 +36,7 @@ li:last-child {
     border-width: 5px;
     border-color: #ddd;
   }
-  div{
-    content: "";
-  display: table;
-  clear: both;
-
-  }
+ 
   #new{
     width: 300px;
     border: 15px solid green;
@@ -106,4 +88,29 @@ li:last-child {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
   justify-items: center; /* add this line */
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+button[type="submit"] {
+  font-size: 16px;
+  padding: 10px;
+  background-color: rgb(104, 104, 109);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

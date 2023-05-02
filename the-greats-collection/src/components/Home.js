@@ -1,5 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import SearchStyles from './Searchbar';
+import './Home.css'
+
 
 function Home() {
   const [tshirts, setTshirts] = useState([]);
@@ -20,7 +22,11 @@ function onSearch(search){const results = tshirts.filter(tshirt => tshirt.brand.
   return (
 
     <div className='alt'>
-      <SearchStyles onSearch={onSearch} />
+
+      <div id="search">
+      <SearchStyles onSearch={onSearch} className="search" />
+      </div>
+
       {tshirts.map((tshirt) => (
         <div key={tshirt.id}>
           <img src={tshirt.img} alt={tshirt.type} />
