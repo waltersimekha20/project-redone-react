@@ -8,16 +8,17 @@ function SearchStyles({ onSearch }) {
     onSearch(query);
   }
 
-  return (
+  return ( 
+    
     <form onSubmit={handleSubmit}>
       
       <input
-        type="text"
+        id="text"
         value={query}
         onChange={(event) => setQuery(event.target.value)}
         placeholder="Search..."
       />
-      <button type="submit" />
+      <input type="Submit" value="Search"></input>
       </form>)}
        
 

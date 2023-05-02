@@ -13,6 +13,7 @@ function Navbar() {
       <div id='Nav'>
       <NavLink to="/about" className="NavLink">About</NavLink>
       <NavLink to="/home" className="NavLink">Home</NavLink>
+      <NavLink to="/form" className="NavLink">Add new Shirt</NavLink>
    
       </div>
       

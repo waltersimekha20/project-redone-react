@@ -6,7 +6,7 @@
       "brand": "levi's",
       "size": 29,
       "price": 500,
-      "color":" blue",
+      "color": " blue",
       "img": "https://data.mascheronistore.com/imgprodotto/batwing-logo-t-shirt-kid-prince-blue_72845_zoom.jpg"
     },
     {
@@ -15,7 +15,7 @@
       "brand": "polo",
       "size": 30,
       "price": 600,
-      "color":"black",
+      "color": "black",
       "img": "https://www.thehub.in/wp-content/uploads/2021/09/Ultimate_Guide_Img_COVER.jpg"
     },
     {
@@ -90,5 +90,7 @@
       "color": "cream",
       "img": "http://cdn.shopify.com/s/files/1/0279/0349/2171/products/Layer18_6a896d4f-ae7f-46b6-9da2-5b57bfd8c71e.jpg?v=1665688265"
     }
+    
+   
   ]
 }

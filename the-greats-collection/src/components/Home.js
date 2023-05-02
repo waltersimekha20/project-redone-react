@@ -15,17 +15,20 @@ function Home() {
 
 function onSearch(search){const results = tshirts.filter(tshirt => tshirt.brand.toLowerCase().includes(search.toLowerCase()))
   return setTshirts(results)
-  
 
 }
 
+function addClothes(newtshirt){
+ setTshirts([...tshirts, newtshirt])
+}
+
   return (
-
-    <div className='alt'>
-
-      <div id="search">
+    <div>
+         <div id="search">
       <SearchStyles onSearch={onSearch} className="search" />
       </div>
+    <div className='alt'>
+        
 
       {tshirts.map((tshirt) => (
         <div key={tshirt.id}>
@@ -36,9 +39,16 @@ function onSearch(search){const results = tshirts.filter(tshirt => tshirt.brand.
           <p>Color: {tshirt.color}</p>
           <p>Price: ${tshirt.price}</p>
         </div>
+        
       ))}
+
+     
+
+      
     
     </div>
+    </div>
+  
   );
 }
 
